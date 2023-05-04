@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
     res.send(htmlPage)
 });
 
+app.get('/products/:productID', (req, res) => {
+    const productID = req.params
+})
+
 app.get('/about', (req, res) => {
     res.send('About page')
 });
